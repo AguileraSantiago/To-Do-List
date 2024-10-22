@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Img/check-mark-notepad-svgrepo-com.svg"
+      type="image/png"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="./Img/check-mark-notepad-svgrepo-com.svg"
+          alt="Logo To-Do List"
+        />
+        <h1>To-Do-List</h1>
+      </div>
+      <nav class="nav">
+        <a href="#completadas">Tareas Completadas</a>
+        <a href="#EnProgreso">En Progreso</a>
+        <a href="#PorHacer">Por Hacer</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <a href="#" class="back-to-top">🔝</a>
+      <div class="view-controls">
+        <button class="btn-list-view">Vista de Lista</button>
+        <button class="btn-card-view">Vista de Tarjetas</button>
+      </div>
+      <section class="task-board">
+        <div id="PorHacer" class="task-column">
+          <h2>Por Hacer</h2>
+          <div class="task-card high-priority">
+            <h3>Comprar víveres <button class="lapiz">✏️</button></h3>
+            <p>Comprar frutas, verduras y productos lácteos.</p>
+            <span>Fecha límite: 25 de Octubre</span>
+            <label class="custom-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="task-card medium-priority">
+            <h3>Preparar presentación <button class="lapiz">✏️</button></h3>
+            <p>
+              Revisar las diapositivas para la reunión de la próxima semana.
+            </p>
+            <span>Fecha límite: 27 de Octubre</span>
+            <label class="custom-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <div id="EnProgreso" class="task-column">
+          <h2>En Progreso</h2>
+          <div class="task-card medium-priority">
+            <h3>Diseño de la página web <button class="lapiz">✏️</button></h3>
+            <p>Implementar el diseño responsivo de la nueva landing page.</p>
+            <span>Fecha límite: 24 de Octubre</span>
+            <label class="custom-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <div id="completadas" class="task-column">
+          <h2>Completadas</h2>
+          <div class="task-card completed">
+            <h3>Enviar informe mensual</h3>
+            <p>Informe enviado el 15 de Octubre.</p>
+          </div>
+          <div class="task-card completed">
+            <h3>Limpieza de la oficina</h3>
+            <p>Limpieza general realizada el 17 de Octubre.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <a href="#"><i class=""></i>Ajustes</a>
+        <a href="#"><i class=""></i>Ayuda</a>
+        <a href="#"><i class=""></i>Contacto</a>
+      </nav>
+      <div>
+        <br />
+        <p>&copy; 2024 Lista de Tareas. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
